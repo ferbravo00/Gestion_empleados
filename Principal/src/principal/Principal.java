@@ -6,6 +6,7 @@
 package principal;
 import dominio.Persona;
 import dominio.Empleado;
+import java.util.Arrays;
 /**
  *
  * @author Alumno Mañana
@@ -21,6 +22,9 @@ public class Principal {
         Persona p2 = new Persona ("Ingrid", "Ayala");
         System.out.println(p1);
         System.out.println(p2);
+        
+        Arrays personas [] = new Arrays [5];
+        
     }
     
     
