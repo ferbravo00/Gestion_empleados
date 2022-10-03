@@ -5,6 +5,7 @@
  */
 package principal;
 import dominio.Persona;
+import dominio.Empleado;
 /**
  *
  * @author Alumno Mañana
@@ -21,5 +22,6 @@ public class Principal {
         System.out.println(p1);
         System.out.println(p2);
     }
+    
     
 }
