@@ -20,19 +20,35 @@ public class Principal {
         // TODO code application logic here
         Persona p1 = new Persona ("Fer", "Bravo");
         Persona p2 = new Persona ("Ingrid", "Ayala");
+        Persona p3 = new Persona ("Paco", "Paquito");
+        Persona p4 = new Persona ("Nacho", "Nachito");
 //        System.out.println(p1);
 //        System.out.println(p2);
         
-        Persona personas [] = new Persona [2];
+//        Persona personas [] = new Persona [2];
+//        
+//        personas[0] = p1;
+//        personas[1] = p2;
+//    
+//        for (int i = 0; i < personas.length; i++) {
+//            System.out.println(personas[i]);
+//        }
+        Persona personas [][] = new Persona [2][2];
+        personas[0][0] = p1;
+        personas[0][1] = p2;
+        personas[1][0] = p3;
+        personas[1][1] = p4;
         
-        personas[0] = p1;
-        personas[1] = p2;
-    
         for (int i = 0; i < personas.length; i++) {
-            System.out.println(personas[i]);
+            for (int j = 0; j < personas[i].length; j++) {
+                System.out.println("Persona ["+i+"] ["+j+"]: \n"+personas[i][j]);
+                System.out.println("");
+            }
+            System.out.println("");
         }
-        
+        System.out.println("");
     }
+    
     
     
 }
