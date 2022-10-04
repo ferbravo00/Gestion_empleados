@@ -20,10 +20,17 @@ public class Principal {
         // TODO code application logic here
         Persona p1 = new Persona ("Fer", "Bravo");
         Persona p2 = new Persona ("Ingrid", "Ayala");
-        System.out.println(p1);
-        System.out.println(p2);
+//        System.out.println(p1);
+//        System.out.println(p2);
         
-        Arrays personas [] = new Arrays [5];
+        Persona personas [] = new Persona [2];
+        
+        personas[0] = p1;
+        personas[1] = p2;
+    
+        for (int i = 0; i < personas.length; i++) {
+            System.out.println(personas[i]);
+        }
         
     }
     
