@@ -47,8 +47,24 @@ public class Principal {
             System.out.println("");
         }
         System.out.println("");
+        
+        
+        imprimirnum(3,6,8,4);
+        imprimirnum(3,6,8);
+        imprimirnum(2,5,4,9,1);
+        
+        
     }
     
+    public static void imprimir (Object tb[]){
+        for (int i = 0; i < tb.length; i++) {
+            System.out.println(tb[i]);
+        }
+    }
     
-    
+    public static void imprimirnum (int... num){
+        for (int i = 0; i < num.length; i++) {
+            System.out.println("num ["+i+"] = " + num[i]);
+        }
+    }
 }
