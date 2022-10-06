@@ -5,7 +5,7 @@
  */
 package principal;
 import dominio.Persona;
-import dominio.Empleado;
+import dominio.*;
 import java.util.Arrays;
 /**
  *
@@ -22,6 +22,11 @@ public class Principal {
         Persona p2 = new Persona ("Ingrid", "Ayala");
         Persona p3 = new Persona ("Paco", "Paquito");
         Persona p4 = new Persona ("Nacho", "Nachito");
+        Empleado e1 = new Empleado (234,"Paco","Garcia",445);
+        Empleado e2 = new Empleado (234,"Pacomerte","Guapo",445);
+        Gerente g1 = new Gerente ("Hola","eey",2345,"Nacho", "Nachito",345);
+        
+        
 //        System.out.println(p1);
 //        System.out.println(p2);
         
@@ -52,7 +57,7 @@ public class Principal {
         imprimirnum(3,6,8,4);
         imprimirnum(3,6,8);
         imprimirnum(2,5,4,9,1);
-        
+        mostrarDetalles(g1);
         
     }
     
@@ -65,6 +70,20 @@ public class Principal {
     public static void imprimirnum (int... num){
         for (int i = 0; i < num.length; i++) {
             System.out.println("num ["+i+"] = " + num[i]);
+        }
+    }
+    
+    public static void mostrarDetalles(Persona p){
+        if(p instanceof Persona){
+            System.out.println("Es una instancia de una PERSONA");
+        }
+        if(p instanceof Empleado){
+            System.out.println("Es una instancia de una EMPLEADO");
+            System.out.println("Su sueldo es: "+((Empleado) p).getSueldo());
+        }
+        if(p instanceof Gerente){
+            System.out.println("Es una instancia de una GERENTE");
+            System.out.println("Su departamento es: "+((Gerente) p).getDepartamento());
         }
     }
 }
